@@ -5,7 +5,7 @@
 Takt is still very much a work in progress and thus pretty rough around the edges. It is not deemed production-quality and should be considered more of a proof of concept than anything else. Bugs may still appear. Please use the application at your own discretion.  
 
 # Demo
-**Live demo**: [https://takt-application.herokuapp.com/](https://takt-application.herokuapp.com/)
+**Live demo**: [https://takt-application.herokuapp.com/](https://takt-application.herokuapp.com/) (Can be very slow at times)
 ![demo_of_creating_rooms](demo/create_room.gif)
 
 ![demo_of_playing_songs](demo/play_songs.gif)
