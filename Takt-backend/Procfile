@@ -1,1 +1,1 @@
-web: java $JAVA_OPTS -jar build/libs/untitled-1.0-SNAPSHOT.jar -Dserver.port=$PORT $JAR_OPTS
+web: java $JAVA_OPTS -jar build/libs/Takt-backend-1.0-SNAPSHOT.jar -Dserver.port=$PORT $JAR_OPTS
