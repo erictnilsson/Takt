@@ -1,0 +1,15 @@
+.close {
+    color: white;
+    cursor: pointer;
+}
+
+div.alert {
+    text-align: center;
+    background-color: #F42C04;
+    border-color: #F42C04;
+    outline: #F42C04;
+    text-shadow: none;
+    color: white;
+    margin-bottom: auto;
+    width: 100%;
+}

@@ -1,0 +1,12 @@
+<nav class="navbar fixed-top banner" style="text-align: center;">
+  <button class="mediaBtn" type="button" (click)="goToDashboard()">Dashboard</button>
+  <div class="">
+    <h1 style="color: white; float: left;">Room {{roomId}}</h1>
+    <button class="mediaBtn-filled" type="button" style="margin-left: 10px; margin-top: 6px; padding: 0.5em; float:right" (click)="copyToClipboard()">
+      Copy code</button>
+  </div>
+  <div>
+    <i class="far fa-user-circle"></i>
+    {{displayName}}
+  </div>
+</nav>

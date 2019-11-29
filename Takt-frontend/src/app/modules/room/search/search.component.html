@@ -1,0 +1,19 @@
+<form [formGroup]="form" (ngSubmit)="submit()">
+  <div class="input-group mb-3">
+    <input type="text" class="form-control mediaBtn-search" placeholder="Search song..." formControlName="searchInput">
+    <div class="input-group-append">
+      <button class="mediaBtn-outline" type="button" (click)="submit()">Search</button>
+    </div>
+  </div>
+  <div class="overflow-auto" style="max-height: 20em;">
+    <ul class="list-group" *ngFor="let result of results; let i = index">
+      <li>
+        <button type="button" class="list-group-item list-item mediaBtn" (click)="queueTrack(i)"
+          style="text-align: left;">
+          <i class=" fas fa-plus" style="font-size: 12px; margin-left: -15px"></i>
+          <span style="margin-left:10px">{{result}}</span>
+        </button>
+      </li>
+    </ul>
+  </div>
+</form>

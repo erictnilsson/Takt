@@ -1,0 +1,27 @@
+<div>
+  <nav class="navbar fixed-top banner">
+    <button class="mediaBtn" type="button" (click)="logout()">Logout</button>
+    <div>
+      <h1>Takt</h1>
+    </div>
+    <div>
+      <i class="far fa-user-circle"></i>
+      {{displayName}}
+    </div>
+  </nav>
+</div>
+
+<div class="container align-self-center" style="width: 40rem; margin-bottom: 20px; margin-top: 180px">
+  <form [formGroup]="form" (ngSubmit)="submit()">
+    <button type="button" class="mediaBtn-filled" (click)='createRoom()'>Create new Room</button>
+    <br>
+    <br>
+    <div class="input-group mb-3">
+      <input type="text" class="form-control mediaBtn-search" placeholder="Enter active room code"
+        formControlName="roomId">
+      <div class="input-group-append">
+        <button class="mediaBtn-outline" type="button" (click)="submit()">Join</button>
+      </div>
+    </div>
+  </form>
+</div>

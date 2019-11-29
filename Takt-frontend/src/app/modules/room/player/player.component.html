@@ -1,0 +1,33 @@
+<div class="fixed-bottom banner player">
+  <div>
+    <app-error></app-error>
+  </div>
+  <div class="row justify-content-md-center">
+    <div class="col-2 player-section">
+      <p></p>
+      <select class="option" ngModel="activeDevice" (ngModelChange)="setDevice($event)">
+        <option *ngFor="let device of devices; let i = index" [selected]="i || i == 0" [value]="device" [ngValue]="device">
+          {{device}}
+        </option>
+      </select>
+    </div>
+    <div class="col player-section">
+      <p>{{current}}</p>
+      <div class="slidecontainer">
+        <span style="width: 10px; float: left">{{currentPosition | date: 'm:ss'}}</span>
+        <input type="range" min="0" max="{{endPositionMs}}" value="{{positionMs}}" class="slider"
+          style="margin-left: 1px" disabled="true" id="player-slider">
+        <span style="width: 10px; float: right">{{endPosition | date: 'm:ss'}}</span>
+      </div>
+    </div>
+    <div class="col-3 player-section left">
+      <button class="mediaBtn reversed" type="button" (click)=playPaus() style="border: none; font-size: 40px;">
+        <i *ngIf="playing" class="fas fa-pause-circle"></i>
+        <i *ngIf="!playing" class="fas fa-play-circle"></i>
+      </button>
+      <span class="warningtext">
+        <i class="fas fa-exclamation-circle" style="font-size: 12px;"></i>
+        experimental features: Exact synchronization not guaranteed</span>
+    </div>
+  </div>
+</div>

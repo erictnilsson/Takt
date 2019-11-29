@@ -1,0 +1,119 @@
+.player {
+    text-align: center;
+}
+
+.player-section {
+    text-align: center;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.player-section.left {
+    border-left: 1px solid #1DB954;
+}
+
+.player-section.left:hover .warningtext {
+    visibility: visible;
+    opacity: 1;
+}
+
+span.warningtext {
+    visibility: hidden;
+    font-size: 12px;
+    width: 200px;
+    background-color: #9d0202;
+    border-radius: 20%;
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    bottom: 120%;
+    left: 50%;
+    margin-left: -110px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+button.mediaBtn.reversed {
+    background-color: transparent;
+    color: #1DB954;
+    transition: color 0.15s ease-in-out;
+    outline: none;
+    border: none;
+}
+
+button.mediaBtn.reversed:hover {
+    color: white;
+}
+
+button.mediaBtn.reversed:active {
+    color: rgb(119, 234, 159);
+}
+
+.slidecontainer {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    text-align: center;
+    font-size: 13px;
+}
+
+.slider {
+    vertical-align: 3px;
+    -webkit-appearance: none;
+    width: 75%;
+    height: 2px;
+    border-radius: 5px;
+    background: white;
+    outline: none;
+    opacity: 1;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+    transition: all .12s ease;
+    -webkit-transition: all .12s ease;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #aeaeae;
+}
+
+.slider::-moz-range-thumb {
+    appearance: none;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #aeaeae;
+}
+
+.active-slider::-webkit-slider-thumb {
+    background: #1DB954;
+    transform: scale(1.4);
+}
+
+.active-slider::-moz-range-thumb {
+    background-color: #1DB954;
+    transform: scale(1.4);
+}
+
+.option {
+    background-color: transparent;
+    border-radius: 0px;
+    border: none;
+    outline: none;
+    color: white;
+}
+
+.option:hover {
+    color: #1DB954;
+}
+
+.option:active {
+    color: #1DB954;
+}

@@ -1,0 +1,19 @@
+.banner {
+    height: 5em;
+    text-align: center;
+    color: white;
+}
+
+button.mediaBtn-filled {
+    width: 38em;
+    height: 5em;
+}
+
+.mediaBtn-search {
+    width: 14rem;
+    height: 5em;
+}
+
+button.mediaBtn-outline {
+    width: 12em;
+}

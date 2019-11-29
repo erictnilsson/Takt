@@ -1,0 +1,105 @@
+/* Global styles */
+
+body {
+    background-color: #1f1e1e;
+    color: white;
+}
+
+.banner {
+    background-color: #191414;
+}
+
+button.mediaBtn {
+    background-color: transparent;
+    color: white;
+    transition: color 0.15s ease-in-out;
+    outline: none;
+    border: none;
+}
+
+button.mediaBtn:hover {
+    color: #1DB954;
+}
+
+button.mediaBtn:active {
+    color: white;
+}
+
+button.mediaBtn-filled {
+    background-color: #1DB954;
+    color: white;
+    transition: background-color .15s ease-in-out;
+    -webkit-transition: background-color .15s ease-in-out;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+}
+
+button.mediaBtn-filled:hover {
+    background-color: rgb(52, 201, 104);
+}
+
+button.mediaBtn-filled:active {
+    background-color: rgb(119, 234, 159);
+    color: white;
+    outline: none;
+    border: none;
+}
+
+button.mediaBtn-outline {
+    background-color: #191414;
+    color: white;
+    transition: border 0.15s ease-in-out;
+    -webkit-transition: background-color .15s ease-in-out;
+    border: 1px solid white;
+    outline: none;
+    border-top-right-radius: 10%;
+    border-bottom-right-radius: 10%;
+}
+
+button.mediaBtn-outline:hover {
+    background-color: #1DB954;
+    border: 1px solid #1DB954;
+}
+
+button.mediaBtn-outline:active {
+    background-color: rgb(119, 234, 159);
+    color: white;
+    border: 1px solid rgb(119, 234, 159);
+}
+
+.mediaBtn-search {
+    background-color: transparent;
+    color: white;
+    transition: border 0.15s ease-in-out;
+    outline: none;
+}
+
+.mediaBtn-search:hover {
+    border: 2px solid white;
+    background-color: transparent;
+    outline: 0 none;
+}
+
+input[type="search"]:active, input[type="text"]:active, .button.mediaBtn-search:active {
+    border: 2px solid #1DB954;
+    background-color: transparent;
+    outline: none;
+    color: white;
+}
+
+input[type="text"]:focus, input[type="search"]:focus, .button.mediaBtn-search:focus {
+    border: 2px solid #1DB954;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    box-shadow: none;
+}
+
+.list-item {
+    background-color: transparent;
+    border-radius: 0px;
+    border: none;
+    outline: none;
+    color: white;
+}
